@@ -1,7 +1,7 @@
 <template>
     <h1>List</h1>
     <div id="list">
-
+      empty
     </div>
 </template>
 <script lang="ts">
