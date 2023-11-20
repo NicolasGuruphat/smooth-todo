@@ -1,13 +1,16 @@
 <template>
     <h1>List</h1>
     <div id="list">
-      empty
+      {{tasks[0]}}
     </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: 'ListTasks'
+  name: 'ListTasks',
+  data () {
+    return { tasks: [] }
+  }
 })
 </script>
 <style>
