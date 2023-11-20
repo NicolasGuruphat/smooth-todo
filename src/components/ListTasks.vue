@@ -1,7 +1,12 @@
 <template>
     <h1>List</h1>
     <div id="list">
-      {{tasks[0]}}
+      <template v-if="tasks.length === 0">
+        empty
+      </template>
+      <template v-else>
+        {{tasks[0]}}
+      </template>
     </div>
 </template>
 <script lang="ts">
