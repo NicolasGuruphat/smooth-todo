@@ -10,6 +10,11 @@ export default defineComponent({
   name: 'App',
   components: {
     ListTasks
+  },
+  data () {
+    return {
+      tasks: []
+    }
   }
 })
 </script>
